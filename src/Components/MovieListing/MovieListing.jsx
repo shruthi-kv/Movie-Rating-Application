@@ -1,4 +1,4 @@
-export default MovieListing = () =>{
+export default function MovieListing(){
     return(
         <>
         MovieListing
