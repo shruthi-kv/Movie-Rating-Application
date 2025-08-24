@@ -1,5 +1,5 @@
-@import '../src/Common/Colors.scss';
-
+// @import '../src/Common/Colors.scss';
+@use "../src/Common/Colors.scss" as *;
 *{
   margin : 0;
   padding : 0;
