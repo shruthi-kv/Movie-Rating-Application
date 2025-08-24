@@ -16,3 +16,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - Footer
 - Home 
     - Api call(get movies)
+- Redux
+    - installation
+    - create store
+    - provide the store to the application
