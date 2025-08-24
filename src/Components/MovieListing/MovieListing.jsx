@@ -40,7 +40,7 @@ export default function MovieListing() {
                 {renderMovies}
             </div>
         </div>
-         <div className="shoq-list">
+         <div className="show-list">
             <h2>Shows</h2>
             <div className="movie-container">
                 {renderShows}

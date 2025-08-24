@@ -28,5 +28,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - Redux Middleware - sync to async api call
     - Movies thunk
     - Shows thunk
+    
+- Animation on hover on any card
 
 
