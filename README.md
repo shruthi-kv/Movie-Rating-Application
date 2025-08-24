@@ -26,5 +26,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - Card component
 
 - Redux Middleware - sync to async api call
+    - Movies thunk
+    - Shows thunk
 
 

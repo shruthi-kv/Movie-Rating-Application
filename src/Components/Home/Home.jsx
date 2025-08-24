@@ -3,7 +3,7 @@ import MovieListing from "../MovieListing/MovieListing";
 
 
 import {useDispatch} from 'react-redux';
-import {fetchAsyncMovies} from '../../Features/movies/movieSlice'
+import {fetchAsyncMovies, fetchAsyncShows} from '../../Features/movies/movieSlice'
 
 const Home = () => {
 
@@ -12,6 +12,7 @@ const Home = () => {
 
   useEffect(() => {
    dispatch(fetchAsyncMovies())
+   dispatch(fetchAsyncShows())
   }, [dispatch]);
 
 
