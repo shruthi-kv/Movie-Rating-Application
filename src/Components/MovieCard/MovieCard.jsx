@@ -4,11 +4,11 @@ import './MovieCard.scss';
 
 
 export default function MovieCard({key, data}){
-    
+        console.log(data,"Data")
     return (
 
-       <div className ="card-item" > 
-        <Link to={`/movie/${data.imdbID}`} >
+       <div className ="card-item"  key={key}> 
+          <Link to={`/movie/${data.imdbID}`}>
             <div className="card-inner">
                 <div className="card-top">
                     <img
