@@ -37,3 +37,4 @@ If you are developing a production application, we recommend using TypeScript wi
 - Loading state
 
 - Carousel for movies
+- Search functionality

@@ -5,10 +5,10 @@ import { APIkey } from "../../Common/apis/movieApiKey";
 
 export const fetchAsyncMovies = createAsyncThunk(
   "movies/fetchAsyncMovies",
-  async () => {
-       const movieText = "Harry";
+  async (term) => {
+
     const response = await movieApi
-      .get(`?apiKey=${APIkey}&s=${movieText}&type=movie`)
+      .get(`?apiKey=${APIkey}&s=${term}&type=movie`)
 
       return response.data;
   }
@@ -17,10 +17,10 @@ export const fetchAsyncMovies = createAsyncThunk(
 
 export const fetchAsyncShows = createAsyncThunk(
   "movies/fetchAsyncShows",
-  async () => {
-       const series = "Friends";
+  async (term) => {
+       
     const response = await movieApi
-      .get(`?apiKey=${APIkey}&s=${series}&type=series`)
+      .get(`?apiKey=${APIkey}&s=${term}&type=series`)
 
       return response.data;
   }
