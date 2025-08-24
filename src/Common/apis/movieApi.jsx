@@ -1,4 +1,4 @@
-import {APIkey} from './movieAPiKey';
+import {APIkey} from './key';
 import axios from 'axios';
 
 export default axios.create({
