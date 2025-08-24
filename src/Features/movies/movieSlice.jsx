@@ -14,6 +14,7 @@ export const fetchAsyncMovies = createAsyncThunk(
   }
 );
 
+
 export const fetchAsyncShows = createAsyncThunk(
   "movies/fetchAsyncShows",
   async () => {
@@ -50,11 +51,15 @@ const movieSlice = createSlice({
     })
     .addCase(fetchAsyncMovies.rejected, () => {
       console.log("rejected");
+
     })
     .addCase(fetchAsyncShows.fulfilled, (state, { payload }) => {
       console.log("fetched successfully!");
       state.shows = payload; // directly mutate state (Immer handles it)
     })
+
+    });
+
 }
 });
 
