@@ -58,7 +58,6 @@ const movieSlice = createSlice({
       state.shows = payload; // directly mutate state (Immer handles it)
     })
 
-    });
 
 }
 });
