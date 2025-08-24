@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   fetchAsyncSeriesOrShowDetails,
   getSelectedMovieOrShow,
+  removeSelectedMovieOrShow
 } from "../../Features/movies/movieSlice";
 import './MovieDetails.scss'
 
@@ -14,6 +15,10 @@ export default function MovieDetails() {
 
   useEffect(() => {
     dispatch(fetchAsyncSeriesOrShowDetails(imbbID));
+
+    return () => {
+        dispatch(removeSelectedMovieOrShow())
+    }
   }, [dispatch, imbbID]);
 
   return (
