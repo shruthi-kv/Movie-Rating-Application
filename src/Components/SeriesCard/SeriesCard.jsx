@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './MovieCard.scss';
+import './SeriesCard.scss';
 
 
-export default function MovieCard({key, data}){
-     
+export default function SeriesCard({key, data}){
+  
     return (
 
        <div className ="card-item"  key={key}> 
