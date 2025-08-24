@@ -1,10 +1,14 @@
 import React from 'react';
+
 import './MovieCard.scss';
+
 
 export default function MovieCard({key, data}){
     
     return (
+
        <div className =" card-item" > 
+
             <div className="card-inner">
                 <div className="card-top">
                     <img

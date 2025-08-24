@@ -24,5 +24,7 @@ If you are developing a production application, we recommend using TypeScript wi
     - get all the movies
     
 - Card component
+
 - Redux Middleware - sync to async api call
+
 

@@ -1,3 +1,4 @@
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import movieApi from "../../Common/apis/movieApi";
 import { APIkey } from "../../Common/apis/movieApiKey";
@@ -39,6 +40,7 @@ const movieSlice = createSlice({
     });
 }
 });
+
 
 export const { addMovies } = movieSlice.actions;
 export const getAllMovies = (state) => state.movies.movies;
