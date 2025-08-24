@@ -22,3 +22,6 @@ If you are developing a production application, we recommend using TypeScript wi
     - provide the store to the application
     - dispatch action - post the movie data
     - get all the movies
+    
+- Card component
+

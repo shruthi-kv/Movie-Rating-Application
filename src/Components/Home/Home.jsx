@@ -19,7 +19,6 @@ const Home = () => {
         .catch((err) => {
           console.log("Err :", err);
         });
-      console.log(response);
       dispatch(addMovies(response.data))
     };
     fetchMovies();
