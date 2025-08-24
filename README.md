@@ -38,3 +38,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 - Carousel for movies
 - Search functionality
+
+- Bugs
+    - Handle empty text on click of search

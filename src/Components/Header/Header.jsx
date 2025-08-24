@@ -14,7 +14,7 @@ export default function Header() {
   const [term, setTerm] = useState("");
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(term);
+   if( term === '') return alert('Please Enter Valid Text')
     dispatch(fetchAsyncMovies(term));
     dispatch(fetchAsyncShows(term));
     setTerm("")
